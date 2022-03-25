@@ -1,0 +1,309 @@
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus, .bu, .bu:focus, .bu:hover {
+    border: unset;
+    outline: unset;
+    box-shadow: none;
+}
+
+.offcanvas {
+    width: 100%;
+
+}
+
+.offcanvas-title img {
+    padding-left: 2rem;
+    height: 2rem;
+}
+
+.offcanvas-header .btn-close {
+    font-size: x-large;
+    padding-right: 2rem;
+}
+
+.accordion-body {
+    line-height: 2rem;
+}
+
+.accordion-item {
+    text-align: center;
+    border: none;
+}
+
+.accordion-button {
+    display: block;
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.accordion-button:focus {
+    box-shadow: unset;
+    border-color: none;
+}
+
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+#navbar {
+    height: 100px;
+    background-color: #fff;
+    top: -100px;
+    transition: top 0.3s;
+    z-index: 7;
+}
+
+.offcanvas-body {
+    width: 20rem;
+    margin: auto;
+}
+
+
+.logo {
+    height: 30px;
+}
+
+.pos, .pos:focus {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    z-index: 7;
+    outline: unset;
+    box-shadow: none;
+
+}
+
+.pos i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.switch {
+    width: -webkit-fill-available;
+}
+
+.switch .btn {
+    padding: .8rem;
+    background-color: #f1f1f1;
+}
+
+.switch .btn:first-child {
+    background-color: #4a4a4a;
+}
+
+
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.overtop {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+}
+
+.overtop img {
+    height: 8rem;
+}
+
+.bu {
+    width: 20rem;
+    height: 3rem;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.card-img-overlay {
+    padding-left: 3rem;
+    padding-top: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+
+}
+
+.footer {
+
+    padding: 2rem 0rem 5rem 0rem;
+}
+
+.footer img {
+    height: 38px;
+}
+
+.nav-link {
+    padding-right: .8rem !important;
+
+    color: #fff;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: unset !important;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+.card-title {
+    position: relative;
+}
+
+.card-title::after {
+    content: " ";
+    height: 4px;
+    width: 4rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5%;
+    left: 0%;
+}
+
+.card-text {
+    padding-top: .8rem;
+    line-height: 1.4rem;
+}
+
+.invent {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        height: 60vh;
+    }
+
+    .overtop img {
+        height: 5rem;
+    }
+
+    .bu {
+        width: 12rem;
+        height: 2rem;
+    }
+
+    .mh {
+        height: 300px;
+
+    }
+
+    .mh img {
+        width: fit-content;
+        height: inherit;
+    }
+
+
+    .nav {
+        display: block;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    #navbar {
+        background-color: #fff !important;
+
+    }
+
+    .card-img-overlay {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .bu {
+        width: 8rem;
+
+    }
+
+    .bu i {
+        display: none;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .switch .btn i {
+        display: none;
+    }
+
+}
